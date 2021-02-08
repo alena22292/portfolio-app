@@ -38,7 +38,7 @@ class Contact extends Component {
       backgroundSize: "cover",
       position: "relative",
       zIndex: -1,
-      height: "400px"
+      height: "100vh"
     }
     return (
       <section className="" id="contact" style={cssStyle}>

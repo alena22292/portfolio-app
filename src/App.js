@@ -7,6 +7,7 @@ import {
 // images:
 import logo from './images/logo.svg';
 import contact from './images/pic_1.jpeg';
+import portfolio from './images/time.jpeg';
 
 // components:
 import Home from './components/Home';
@@ -14,10 +15,11 @@ import Wrapper from './components/Wrapper';
 import About from './components/About';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
+import Tasks from './components/Projects/TaskTracker/Tasks';
 
 function App() {
   return (
-    <div className="container">
+    <div className="">
       <Router>
         <Wrapper image={logo}>
          <Switch>
@@ -32,6 +34,9 @@ function App() {
             </Route>
             <Route path="/portfolio">
               <Portfolio />
+            </Route>
+            <Route path="/tasks">
+              <Tasks image={portfolio} />
             </Route>
           </Switch>
         </Wrapper>

@@ -144,36 +144,36 @@ ul {
 /*theming:*/
 .intro-wrapper.blue-mode {
   background: #a7c5eb;
-  #preview {
-    background-color: #bbf1fa;
-    h3, p {
-      color: #663f3f;
-    }
-  }
-  #preview-shadow {
-    background-color: #51c2d5;
-  }
-  .corner {
-    border: 2px solid #350b40;
-    background-color: #aee1e1;
-  }
+}
+.intro-wrapper.blue-mode #preview {
+  background-color: #bbf1fa;
+}
+.intro-wrapper.blue-mode #preview h3, .intro-wrapper.blue-mode #preview p {
+  color: #663f3f;
+}
+.intro-wrapper.blue-mode #preview-shadow {
+  background-color: #51c2d5;
+}
+.intro-wrapper.blue-mode .corner {
+  border: 2px solid #350b40;
+  background-color: #aee1e1;
 }
 
 .intro-wrapper.green-mode {
   background: #70af85;
-  #preview {
-    background-color: #96bb7c;
-    h3, p {
-      color: #374045;
-    }
-  }
-  #preview-shadow {
-    background-color: #295939;
-  }
-  .corner {
-    border: 2px solid #374045;
-    background-color: #d89216;
-  }
+}
+.intro-wrapper.green-mode #preview {
+  background-color: #96bb7c;
+}
+.intro-wrapper.green-mode #preview h3, .intro-wrapper.green-mode #preview p {
+  color: #374045;
+}
+.intro-wrapper.green-mode #preview-shadow {
+  background-color: #295939;
+}
+.intro-wrapper.green-mode .corner {
+  border: 2px solid #374045;
+  background-color: #d89216;
 }
 
 .intro-wrapper.purple-mode {
@@ -379,10 +379,11 @@ ul {
   justify-content: space-around;
   padding-top: 20px;
   background-color: #5c6e91;
-  li {
-    color: #eeeded;
-  }
 }
+.languages li {
+  color: #eeeded;
+}
+
 .link-color {
   font-weight: bold;
   color: #706897;
@@ -392,9 +393,6 @@ ul {
 }
 
 /*Progects:*/
-
-
-
 .display-flex {
   display: flex;
   justify-content: center;
@@ -408,7 +406,7 @@ ul {
   margin-right: 30px;
 }
 
-// Task manager:
+/*Task manager:*/
 
 .tasks-wrapper {
   margin: 10px auto;
@@ -417,33 +415,35 @@ ul {
   opacity: 0.8;
   border-radius: 10px;
   padding: 40px;
-  &:hover {
-    opacity: 0.9;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.6);
-  }
 }
+.tasks-wrapper:hover {
+  opacity: 0.9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+}
+
 .task-wrapper {
   margin-bottom: 10px;
   padding: 10px;
   opacity: 0.7;
-  h3, p, i {
-    color: #f7f7e8;
-  }
-  p {
-    font-size: 12px;
-  }
   border-radius: 5px;
-  &:hover {
-    opacity: 1;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.6);
-  }
+}
+.task-wrapper h3, .task-wrapper p, .task-wrapper i {
+  color: #f7f7e8;
+}
+.task-wrapper p {
+  font-size: 12px;
+}
+.task-wrapper:hover {
+  opacity: 1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
 }
 
 .dashed {
   border: 5px dashed #ffe227;
 }
+
 .reminder {
-    border-left: 5px solid #ffe227;
+  border-left: 5px solid #ffe227;
 }
 
 .icons {
@@ -467,12 +467,12 @@ ul {
   background: #393e46;
   border-radius: 10px;
   padding: 40px;
-  &:hover {
-    box-shadow: 0 4px 6px rgba(0,0,0,0.6);
-  }
-  label {
-    color: white;
-  }
+}
+.form-add:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+}
+.form-add label {
+  color: white;
 }
 
 /*Buttons:*/
@@ -480,9 +480,9 @@ ul {
   width: 100%;
   box-shadow: 0 1px 2px rgba(0,0,0,0.2);
   font-family: 'Sriracha', cursive;
-  &:hover {
-    box-shadow: 0 4px 6px rgba(0,0,0,0.6);
-  }
+}
+.my-btn:hover {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.6);
 }
 .add-btn {
   color: white;
@@ -493,31 +493,33 @@ ul {
   border-radius: 5px;
   box-shadow: 0 1px 2px rgba(0,0,0,0.2);
   font-family: 'Sriracha', cursive;
-  &:hover {
+}
+.add-btn:hover {
     box-shadow: 0 4px 6px rgba(0,0,0,0.6);
   }
-}
 
 /*Icons:*/
 
-.icons {
-  i {
-    opacity: 0.6;
-    &:hover {
-      opacity: 1;
-      font-size: 20px;
-    }
-  }
+.icons i {
+  opacity: 0.6;
+}
+.icons i:hover {
+  opacity: 1;
+  font-size: 20px;
+}
+.icons input:hover {
+  opacity: 1;
+  font-size: 20px;
 }
 /*Images:*/
 
 .my-picture {
-   display: block;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    margin: 0 auto;
-    object-fit: cover;
+  display: block;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+  object-fit: cover;
 }
 
 .portfolio-pic {
