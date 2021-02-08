@@ -6,6 +6,8 @@ import {
 } from "react-router-dom";
 // images:
 import logo from './images/logo.svg';
+import contact from './images/pic_1.jpeg';
+
 // components:
 import Home from './components/Home';
 import Wrapper from './components/Wrapper';
@@ -26,7 +28,7 @@ function App() {
               <About />
             </Route>
             <Route path="/contact">
-              <Contact />
+              <Contact image={contact}/>
             </Route>
             <Route path="/portfolio">
               <Portfolio />
