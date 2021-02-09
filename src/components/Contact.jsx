@@ -37,7 +37,6 @@ class Contact extends Component {
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
       position: "relative",
-      zIndex: -1,
       height: "100vh"
     }
     return (
