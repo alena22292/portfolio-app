@@ -501,11 +501,14 @@ button.calc-button {
   height: 100px;
   border: 2px solid #ddd;
   border-radius: 5px;
-  background: #eee;
+  background: linear-gradient(to top right, #5b5b5b, #c19065);
   font-size: 32px;
-  color: #555;
+  color: #ddd;
   margin: 3px;
   /*padding-right: 5px;*/
+}
+button.calc-button:hover {
+  background: linear-gradient(to top right, #c19065, #5b5b5b);
 }
 
 input.result {
@@ -519,7 +522,7 @@ input.result {
 }
 
 .calculator-wrapper {
-  background-color: gold;
+  background-color: #5b5b5b;
   margin-top: 40px;
   padding: 20px;
   border-radius: 30px;
