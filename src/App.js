@@ -16,10 +16,11 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
 import Tasks from './components/Projects/TaskTracker/Tasks';
+import Calculator from './components/Projects/Calculator/calculator';
 
 function App() {
   return (
-    <div className="">
+    <div className="app">
       <Router>
         <Wrapper image={logo}>
          <Switch>
@@ -37,6 +38,9 @@ function App() {
             </Route>
             <Route path="/tasks">
               <Tasks image={portfolio} />
+            </Route>
+            <Route path="/calculator">
+              <Calculator />
             </Route>
           </Switch>
         </Wrapper>

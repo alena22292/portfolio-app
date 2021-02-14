@@ -31,9 +31,9 @@ class PortofolioItem extends Component {
           </div>
 
           <div className="portfolio-card">
-            <Link className="portfolio-link" target="_blank" to={this.props.link}>
+            <a className="portfolio-link" target="_blank" rel="noreferrer" href={this.props.link}>
               <div style={cssStyle}></div>
-            </Link>
+            </a>
             <div className="portfolio-caption">
               <h4>{this.props.title}</h4>
               <p className="text-muted">{this.props.subtitle}</p>

@@ -16,7 +16,7 @@ class Wrapper extends Component {
 
   render() {
     return (
-      <div>
+      <div className="page">
         <div className={this.state.responsive ? 'topnav responsive' : 'topnav'} id="myTopnav">
           <Link to="/" className="active">
             <img className="portfolio-pic" src={this.props.image} alt="" />
