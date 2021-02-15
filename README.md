@@ -68,3 +68,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+In the main part of the app about personal greeting there is added a Multiple Color Themes Switcher in ReactJS, using React Hooks namely state and effect hook. It makes be able to switch between different themes. This app will persist its state and it will persist its selected theme even when the page or browse are reloaded to another page. The app makes use of CSS, classes switching, React state and local storage.
