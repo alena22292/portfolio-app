@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import About from './About';
+// Images:
+import my_pic from '../images/image_myself.jpg';
 
-function Theme(props) {
+function Theme() {
     // state
     const [colorTheme, setColorTheme] = useState('light-mode');
 
@@ -22,13 +25,11 @@ function Theme(props) {
     };
 
     return (
-      <div>
-        <section className="s1">
-          <div className="main-container">
+        <section>
             <div className="greeting-wrapper">
               <h1>Hi, I am Alena</h1>
             </div>
-
+          <div className="container">
             <div className={`intro-wrapper ${colorTheme}`}>
               <div className="nav-wrapper">
                 <div className="dots-wrapper">
@@ -39,17 +40,17 @@ function Theme(props) {
                 <div id="navigation">
                   <ul>
                     <li>
-                      <Link className="" to="/about">About</Link>
+                      <a href="../../public/Alena_Gritsiuk_Resume.pdf"><i class="far fa-arrow-alt-circle-down"></i> Resume</a>
                     </li>
                     <li>
-                      <Link className="" to="/contact">Contact</Link>
+                      <Link to="/contact">Contact</Link>
                     </li>
                   </ul>
                 </div>
 
               </div>
               <div className="left-wrapper">
-                <img className="img-fluid my-picture" src={props.image} alt="" />
+                <img className="img-fluid my-picture" src={my_pic} alt="" />
                 <h5 style={{ textAlign: 'center' }}>Personalize Theme</h5>
                 <div className="theme-options">
                    <div id="light-mode" className={`${colorTheme === 'light-mode' ? 'theme-dots active' : 'theme-dots'}`} onClick={() => handleClick("light-mode")}></div>
@@ -71,10 +72,10 @@ function Theme(props) {
                   </div>
                 </div>
               </div>
+              <About />
             </div>
           </div>
         </section>
-      </div>
     );
 }
 

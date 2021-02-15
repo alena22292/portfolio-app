@@ -12,7 +12,7 @@ import portfolio from './images/pic_4.jpg';
 // components:
 import Home from './components/Home';
 import Wrapper from './components/Wrapper';
-import About from './components/About';
+import Theme from './components/Theme';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
 import Tasks from './components/Projects/TaskTracker/Tasks';
@@ -28,7 +28,7 @@ function App() {
               <Home />
             </Route>
             <Route path="/about">
-              <About />
+              <Theme />
             </Route>
             <Route path="/contact">
               <Contact image={contact}/>

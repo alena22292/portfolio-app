@@ -153,9 +153,9 @@ ul {
   text-align: center;
 }
 
-/*Home page*/
-
 /*theming:*/
+
+/*blue color*/
 .intro-wrapper.blue-mode {
   background: #a7c5eb;
 }
@@ -163,24 +163,38 @@ ul {
   background-color: #bbf1fa;
 }
 .intro-wrapper.blue-mode #preview h3, .intro-wrapper.blue-mode #preview p {
-  color: #663f3f;
+  color: #456268;
 }
 .intro-wrapper.blue-mode #preview-shadow {
-  background-color: #51c2d5;
+  background-color: #79a3b1;
 }
 .intro-wrapper.blue-mode .corner {
   border: 2px solid #350b40;
   background-color: #aee1e1;
 }
+.intro-wrapper.blue-mode .my-picture {
+  border-color: #bbf1fa;
+}
+.intro-wrapper.blue-mode .languages {
+  background-color: #456268;
+}
+.intro-wrapper.blue-mode .fab {
+  color: #fcf8ec;
+}
+.intro-wrapper.blue-mode h4, .intro-wrapper.blue-mode p {
+  color: #456268;
+}
+
+/*green color*/
 
 .intro-wrapper.green-mode {
-  background: #70af85;
+  background: #bedbbb;
 }
 .intro-wrapper.green-mode #preview {
   background-color: #96bb7c;
 }
 .intro-wrapper.green-mode #preview h3, .intro-wrapper.green-mode #preview p {
-  color: #374045;
+  color: #707070;
 }
 .intro-wrapper.green-mode #preview-shadow {
   background-color: #295939;
@@ -189,13 +203,58 @@ ul {
   border: 2px solid #374045;
   background-color: #d89216;
 }
+.intro-wrapper.green-mode .my-picture {
+  border-color: #707070;
+}
+.intro-wrapper.green-mode .languages {
+  background-color: #8db596;
+}
+.intro-wrapper.green-mode .fab {
+  color: #fcf8ec;
+}
+.intro-wrapper.green-mode h4, .intro-wrapper.green-mode p {
+  color: #456268;
+}
+
+/*purple color*/
 
 .intro-wrapper.purple-mode {
-  background: #da9ff9;
+  background: #c3aed6;
 }
+.intro-wrapper.purple-mode #preview {
+  background-color: #ffd5cd;
+}
+.intro-wrapper.purple-mode #preview h3, .intro-wrapper.purple-mode #preview p {
+  color: #726a95;
+}
+.intro-wrapper.purple-mode #preview-shadow {
+  background-color: #8675a9;
+}
+.intro-wrapper.purple-mode .corner {
+  border: 2px solid #374045;
+  background-color: #d89216;
+}
+.intro-wrapper.purple-mode .my-picture {
+  border-color: #ffd5cd;
+}
+.intro-wrapper.purple-mode .languages {
+  background-color: #8675a9;
+}
+.intro-wrapper.purple-mode .fab {
+  color: #fcf8ec;
+}
+.intro-wrapper.purple-mode h4, .intro-wrapper.purple-mode p {
+  color: #8675a9;
+}
+
+/*light color*/
+
 .corner {
   border: 2px solid #374045;
   background-color: #f1aa9b;
+}
+.intro-wrapper.light-mode{
+  background: #f5f4f4;
 }
 
 #preview-shadow {
@@ -207,27 +266,9 @@ ul {
 }
 
 #preview h3, p {
-  color: #f1aa9b;
+  color: #7e8a97;
 }
-
-.intro-wrapper.light-mode{
-  background: #f5f4f4;
-}
-
-.s1 {
-  background: #eaeaea;
-  border-bottom: 1px solid #c1c1c1;
-  margin: 0 auto;
-}
-
-.s2 {
-  border-bottom: 1px solid #c1c1c1;
-  margin: 0 auto;
-}
-
-.main-container {
-  margin: 0 auto;
-}
+/*______________________*/
 
 .greeting-wrapper {
   display: grid;
@@ -243,7 +284,6 @@ ul {
     'nav-wrapper nav-wrapper'
     'left-wrapper right-wrapper'
     ;
-  background: $secondaryColor;
   border-radius: 10px 10px 0 0 ;
   border: 1px solid #c1c1c1;
 }
@@ -380,6 +420,20 @@ ul {
   left: -5px;
 }
 
+@media screen and (max-width: 992px) {
+   .intro-wrapper {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+         'nav-wrapper'
+         'left-wrapper'
+         'right-wrapper'
+         ;
+    }
+    .right-wrapper {
+      justify-content: center;
+    }
+}
+
 /*About:*/
 
 .about-wrapper {
@@ -392,7 +446,7 @@ ul {
   display: flex;
   justify-content: space-around;
   padding-top: 20px;
-  background-color: #5c6e91;
+  background-color: #7e8a97;
 }
 .languages li {
   color: #eeeded;
@@ -403,10 +457,21 @@ ul {
   color: #706897;
 }
 .social-links {
-  padding-left: 15px;
+  /*padding-left: 15px;*/
+  margin-top: 20px;
+}
+.social-links ul {
+  display: flex;
+}
+.social-links ul li {
+  margin-right: 15px;
+  opacity: 0.8;
+}
+.social-links ul li:hover {
+  opacity: 1;
 }
 
-/*Progects:*/
+/*Projects:*/
 .display-flex {
   display: flex;
   justify-content: center;
@@ -513,7 +578,6 @@ button.calc-button {
   font-size: 32px;
   color: #ddd;
   margin: 3px;
-  /*padding-right: 5px;*/
 }
 button.calc-button:hover {
   background: linear-gradient(to top right, #c19065, #5b5b5b);
@@ -589,6 +653,7 @@ input.result {
   border-radius: 50%;
   margin: 0 auto;
   object-fit: cover;
+  border: 5px solid white;
 }
 
 .portfolio-pic {
