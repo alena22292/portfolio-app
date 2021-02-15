@@ -5,9 +5,9 @@ import {
   Route
 } from "react-router-dom";
 // images:
-import logo from './images/logo.svg';
+import logo from './images/logo.png';
 import contact from './images/pic_1.jpeg';
-import portfolio from './images/time.jpeg';
+import portfolio from './images/pic_4.jpg';
 
 // components:
 import Home from './components/Home';

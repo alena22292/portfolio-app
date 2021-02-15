@@ -16,8 +16,8 @@ class Header extends Component {
       <header className="page-top" style={cssStyle}>
 
         <div className="hero-text">
-            <h1 style={{ color: '#276678' }} className="">{this.props.title}</h1>
-            <h3 style={{ color: '#1687a7' }} className="text-uppercase">{this.props.subtitle}</h3>
+            <h1 style={{ color: '#f7f6e7' }} className="">{this.props.title}</h1>
+            <h3 style={{ color: '#f7f6e7' }} className="text-uppercase">{this.props.subtitle}</h3>
             {this.props.showButton &&
                 <Link className="btn btn-primary btn-xl text-uppercase " to={this.props.link}>{this.props.buttonText}</Link>
             }

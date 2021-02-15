@@ -21,15 +21,17 @@ class Wrapper extends Component {
           <Link to="/" className="active">
             <img className="portfolio-pic" src={this.props.image} alt="" />
           </Link>
-          <Link to="/portfolio">Portfolio</Link>
-          <Link to="/contact">Contact</Link>
-          <Link to="/about">About</Link>
-          <Link to="#" className="icon" onClick={(e) => {
-            e.preventDefault();
-            this.myFunction();
-          }}>
-            <i className="fa fa-bars"></i>
-          </Link>
+          <div className="row-direction">
+            <Link to="/portfolio">Portfolio</Link>
+            <Link to="/contact">Contact</Link>
+            <Link to="/about">About</Link>
+            <Link to="#" className="icon" onClick={(e) => {
+              e.preventDefault();
+              this.myFunction();
+            }}>
+              <i className="fa fa-bars"></i>
+            </Link>
+          </div>
        </div>
         {this.props.children}
       </div>
