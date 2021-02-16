@@ -283,6 +283,7 @@ ul {
   grid-template-areas:
     'nav-wrapper nav-wrapper'
     'left-wrapper right-wrapper'
+    'about about'
     ;
   border-radius: 10px 10px 0 0 ;
   border: 1px solid #c1c1c1;
@@ -296,6 +297,9 @@ ul {
   border-radius: 10px 10px 0 0 ;
   border-bottom: 1px solid #c1c1c1;
   background: #eaeaea;
+}
+.about {
+  grid-area: about;
 }
 .dots-wrapper{
    display: flex;
@@ -458,7 +462,7 @@ ul {
 }
 .social-links {
   /*padding-left: 15px;*/
-  margin-top: 20px;
+  /*margin-top: 20px;*/
 }
 .social-links ul {
   display: flex;
