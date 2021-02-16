@@ -9,13 +9,20 @@ class About extends Component {
             <div className="about-me">
               <h4>EXPERTISE</h4>
               <p>Fullstack developer with primary focus on Ruby on Rails and React: </p>
-              <div className="languages">
+              <div className="language-container">
+                <div className="progressbar-container">
+                  <div className="progressbar-complete" style={{width: "70%"}}>
+                    <div className="progressbar-liquid"></div>
+                  </div>
+                  <span className="progress">70%</span>
+                </div>
+
+
+
                 <ul>
                   <li>Python</li>
                   <li>Django</li>
                   <li>JavaScript</li>
-                </ul>
-                <ul>
                   <li>HTML/CSS</li>
                   <li>Ruby on Rails</li>
                   <li>Heroku</li>
