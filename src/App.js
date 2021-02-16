@@ -8,6 +8,7 @@ import {
 import logo from './images/logo.png';
 import contact from './images/pic_1.jpeg';
 import portfolio from './images/pic_4.jpg';
+import email from './images/Portofolio/project_5_1.jpg';
 
 // components:
 import Home from './components/Home';
@@ -17,6 +18,7 @@ import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
 import Tasks from './components/Projects/TaskTracker/Tasks';
 import Calculator from './components/Projects/Calculator/calculator';
+import Chat from './components/Projects/Messanger/Chat';
 
 function App() {
   return (
@@ -41,6 +43,9 @@ function App() {
             </Route>
             <Route path="/calculator">
               <Calculator />
+            </Route>
+            <Route path="/chat">
+              <Chat image={email}/>
             </Route>
           </Switch>
         </Wrapper>
