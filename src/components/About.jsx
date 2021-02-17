@@ -16,8 +16,10 @@ class About extends Component {
         <div className="container">
           <div className="about-wrapper">
             <div className="about-me">
-              <h4>EXPERTISE</h4>
-              <p>Fullstack developer with primary focus on Ruby on Rails and React: </p>
+              <div className="about-me-text">
+                <h4>EXPERTISE</h4>
+                <p>Fullstack developer with primary focus on Ruby on Rails and React: </p>
+              </div>
               <div className="language-container">
                 <ul>
                  {languages.map((item) => {
@@ -27,8 +29,10 @@ class About extends Component {
               </div>
             </div>
             <div className="social-links">
-             <h4>Useful links</h4>
-             <p>It is just for practice purporse</p>
+              <div className="about-me-text">
+               <h4>Useful links</h4>
+               <p>It is just for practice purporse</p>
+             </div>
              <ul>
                 <li><i className="fab fa-github"></i></li>
                 <li><i className="fab fa-linkedin-in"></i></li>

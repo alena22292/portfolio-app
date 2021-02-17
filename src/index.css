@@ -438,6 +438,10 @@ ul {
   margin-bottom: 10px;
 }
 
+.about-me-text {
+  text-align: center;
+}
+
 .progress {
   display: flex;
   height: 1rem;
