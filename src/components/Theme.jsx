@@ -4,7 +4,7 @@ import About from './About';
 // Images:
 import my_pic from '../images/image_myself.jpg';
 
-function Theme() {
+function Theme(props) {
     // state
     const [colorTheme, setColorTheme] = useState('light-mode');
 
@@ -40,7 +40,7 @@ function Theme() {
                 <div id="navigation">
                   <ul>
                     <li>
-                      <a href="../../public/Alena_Gritsiuk_Resume.pdf"><i class="far fa-arrow-alt-circle-down"></i> Resume</a>
+                      <a target="_blank" rel="noreferrer" href={`${props.resume}`}><i class="far fa-arrow-alt-circle-down"></i> Resume</a>
                     </li>
                     <li>
                       <Link to="/contact">Contact</Link>

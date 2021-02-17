@@ -11,7 +11,7 @@ import portfolio from './images/pic_4.jpg';
 import email from './images/Portofolio/project_5_1.jpg';
 
 //Links:
-import resume from '../public/Alena_Gritsiuk_Resume.pdfs';
+import resume from './Alena_Gritsiuk_Resume.pdf';
 
 // components:
 import Home from './components/Home';
