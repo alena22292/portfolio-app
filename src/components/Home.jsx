@@ -9,7 +9,6 @@ class Home extends Component {
     return (
       <div>
         <Header image={header} title={"Hello, nice to meet you!"} subtitle={"this is portfolio for a web developer..."} link={"#"} buttonText={"Show more"} />
-
       </div>
     );
   }

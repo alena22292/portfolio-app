@@ -49,6 +49,8 @@ function Theme() {
                 </div>
 
               </div>
+
+              <div className="flex-box">
               <div className="left-wrapper">
                 <img className="img-fluid my-picture" src={my_pic} alt="" />
                 <h5 style={{ textAlign: 'center' }}>Personalize Theme</h5>
@@ -72,6 +74,8 @@ function Theme() {
                   </div>
                 </div>
               </div>
+              </div>
+
               <About />
             </div>
           </div>

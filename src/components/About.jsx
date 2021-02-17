@@ -1,7 +1,16 @@
 import React, { Component } from 'react';
+import AboutItem from './aboutItem';
 
 class About extends Component {
   render() {
+    const languages = [
+    {name: "Python", level: "70%"},
+    {name: "Django", level: "30%"},
+    {name: "JavaScript", level: "85%"},
+    {name: "HTML/CSS", level: "95%"},
+    {name: "Ruby on Rails", level: "90%"},
+    {name: "Heroku", level: "70%"}
+    ]
     return (
       <section className="about" id="about">
         <div className="container">
@@ -10,22 +19,10 @@ class About extends Component {
               <h4>EXPERTISE</h4>
               <p>Fullstack developer with primary focus on Ruby on Rails and React: </p>
               <div className="language-container">
-                <div className="progressbar-container">
-                  <div className="progressbar-complete" style={{width: "70%"}}>
-                    <div className="progressbar-liquid"></div>
-                  </div>
-                  <span className="progress">70%</span>
-                </div>
-
-
-
                 <ul>
-                  <li>Python</li>
-                  <li>Django</li>
-                  <li>JavaScript</li>
-                  <li>HTML/CSS</li>
-                  <li>Ruby on Rails</li>
-                  <li>Heroku</li>
+                 {languages.map((item) => {
+                  return <AboutItem {...item} />
+                 })}
                 </ul>
               </div>
             </div>
