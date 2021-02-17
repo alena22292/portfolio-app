@@ -10,6 +10,9 @@ import contact from './images/pic_1.jpeg';
 import portfolio from './images/pic_4.jpg';
 import email from './images/Portofolio/project_5_1.jpg';
 
+//Links:
+import resume from '../public/Alena_Gritsiuk_Resume.pdfs';
+
 // components:
 import Home from './components/Home';
 import Wrapper from './components/Wrapper';
@@ -30,7 +33,7 @@ function App() {
               <Home />
             </Route>
             <Route path="/about">
-              <Theme />
+              <Theme resume={resume}/>
             </Route>
             <Route path="/contact">
               <Contact image={contact}/>

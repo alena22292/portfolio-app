@@ -22,8 +22,8 @@ class About extends Component {
               </div>
               <div className="language-container">
                 <ul>
-                 {languages.map((item) => {
-                  return <AboutItem {...item} />
+                 {languages.map((item, i) => {
+                  return <AboutItem {...item} key={i} />
                  })}
                 </ul>
               </div>
