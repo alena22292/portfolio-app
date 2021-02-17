@@ -17,8 +17,8 @@ class About extends Component {
           <div className="about-wrapper">
             <div className="about-me">
               <div className="about-me-text">
-                <h4>EXPERTISE</h4>
-                <p>Fullstack developer with primary focus on Ruby on Rails and React: </p>
+                <h2>EXPERTISE</h2>
+                <h4>Fullstack developer with primary focus on Ruby on Rails and React: </h4>
               </div>
               <div className="language-container">
                 <ul>
@@ -30,13 +30,13 @@ class About extends Component {
             </div>
             <div className="social-links">
               <div className="about-me-text">
-               <h4>Useful links</h4>
+               <h2>Useful links</h2>
                <p>It is just for practice purporse</p>
              </div>
              <ul>
-                <li><i className="fab fa-github"></i></li>
-                <li><i className="fab fa-linkedin-in"></i></li>
-                <li><i className="fab fa-instagram"></i></li>
+                <li><i id="social-icon" className="fab fa-github"></i></li>
+                <li><i id="social-icon" className="fab fa-linkedin-in"></i></li>
+                <li><i id="social-icon" className="fab fa-instagram"></i></li>
               </ul>
             </div>
           </div>
