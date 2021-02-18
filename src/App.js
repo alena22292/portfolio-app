@@ -9,6 +9,8 @@ import logo from './images/logo.png';
 import contact from './images/pic_1.jpeg';
 import portfolio from './images/pic_4.jpg';
 import email from './images/Portofolio/project_5_1.jpg';
+import pic_1 from './images/Portofolio/project_5_2.png';
+import pic_2 from './images/Portofolio/project_5_3.png';
 
 //Links:
 import resume from './Alena_Gritsiuk_Resume.pdf';
@@ -48,7 +50,13 @@ function App() {
               <Calculator />
             </Route>
             <Route path="/chat">
-              <Chat image={email}/>
+              <Chat
+                image={email}
+                title={"Chat Up"}
+                subtitle={"Multy channels messenger"}
+                pic_1={pic_1}
+                pic_2={pic_2}
+              />
             </Route>
           </Switch>
         </Wrapper>

@@ -729,14 +729,33 @@ input.result {
   width: 40px;
 }
 
+.hero-picture-400 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+  height: 400px;
+}
+.hero-picture-200 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+  height: 200px;
+}
+
 .img-preview {
   height: 185px;
   width: 100%;
 }
 
-@media screen and (max-width: 773px) {
-  .flex-box {
-    flex-direction: column;
+@media screen and (max-width: 992px) {
+  .flex-box-bar span {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .flex-box-bar {
+    padding-right: 10px;
   }
 }
 
