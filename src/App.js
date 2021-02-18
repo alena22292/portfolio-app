@@ -53,7 +53,7 @@ function App() {
               <Chat
                 image={email}
                 title={"Chat Up"}
-                subtitle={"Multy channels messenger"}
+                subtitle={"Multi-channel messaging application"}
                 pic_1={pic_1}
                 pic_2={pic_2}
               />

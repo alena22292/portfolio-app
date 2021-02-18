@@ -432,6 +432,9 @@ ul {
   margin-bottom: 10px;
   justify-content: space-around;
 }
+.grid-box {
+  margin: auto 0;
+}
 .flex-box-bar {
   display: flex;
   align-items: center;
@@ -734,14 +737,13 @@ input.result {
   background-size: cover;
   position: relative;
   z-index: -1;
-  height: 400px;
+  height: 250px;
 }
 .hero-picture-200 {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  z-index: -1;
-  height: 200px;
+  height: 377px;
 }
 
 .img-preview {
