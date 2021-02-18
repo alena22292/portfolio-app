@@ -14,7 +14,7 @@ class Portfolio extends Component {
       { title: 'Dress-to-Impress', subtitle: 'How often do you wonder what to dress to the comming party...', image: pic_2, link: 'https://dress-to-impress-alena.herokuapp.com/', local: '#'  },
       { title: 'Task Tracker', subtitle: 'This app helps you to maintain a time management of daily life', image: pic_3, link: '/tasks', local: '#' },
       { title: 'Calculator', subtitle: 'Easy to use the app when you need to sum up some stuff', image: pic_4, link: '/calculator', local: '#' },
-      { title: 'Caht Messanger', subtitle: 'Keep in touch with your love ones', image: pic_5, link: '/chat', local: '#' },
+      { title: 'Chat Messanger', subtitle: 'Keep in touch with your love ones', image: pic_5, link: '/chat', local: '#' },
     ];
     return (
       <section className="bg-light page-top" id="portfolio">
