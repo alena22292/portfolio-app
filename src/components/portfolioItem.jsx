@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 
 class PortofolioItem extends Component {
@@ -13,7 +13,7 @@ class PortofolioItem extends Component {
       height: "200px"
     }
     return(
-      <div className="col-md-4 col-sm-6">
+      <div className="col-md-6 col-lg-4">
         <div className="portfolio-wrapper">
           <div className="nav-wrapper">
             <div className="dots-wrapper">
@@ -23,8 +23,8 @@ class PortofolioItem extends Component {
             </div>
             <div id="navigation">
               <ul>
-                <li>
-                  <Link className="" to={this.props.local}>Read more</Link>
+                <li onClick={this.props.function(this.props.title)}>
+                  <i class="far fa-heart"></i> <span>{this.props.num}</span>
                 </li>
               </ul>
             </div>
