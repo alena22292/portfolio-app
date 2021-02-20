@@ -327,6 +327,17 @@ ul {
   margin-right: 5px;
   margin-left: 5px;
 }
+#navigation i {
+  color: #ec4646;
+  margin-right: 6px;
+}
+#navigation i:hover {
+  animation: beat .25s infinite alternate;
+  transform-origin: center;
+}
+@keyframes beat{
+  to { transform: scale(1.4); }
+}
 
 .left-wrapper {
   display: grid;

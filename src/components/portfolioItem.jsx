@@ -23,8 +23,13 @@ class PortofolioItem extends Component {
             </div>
             <div id="navigation">
               <ul>
-                <li onClick={this.props.function(this.props.title)}>
-                  <i class="far fa-heart"></i> <span>{this.props.num}</span>
+                <li onClick={() => this.props.function(this.props.title)}>
+                  {this.props.like ?
+                    <i class="fas fa-heart"></i>
+                    :
+                    <i class="far fa-heart"></i>
+                  }
+
                 </li>
               </ul>
             </div>
