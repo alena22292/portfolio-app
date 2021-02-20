@@ -41,7 +41,7 @@ class PortofolioItem extends Component {
             </a>
             <div className="portfolio-caption">
               <h4>{this.props.title}</h4>
-              <span className="span-text">Viewed: {this.props.value}</span>
+              <span className="span-text">Viewed: {this.props.value} times</span>
               <p className="text-muted">{this.props.subtitle}</p>
             </div>
           </div>
