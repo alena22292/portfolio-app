@@ -26,6 +26,7 @@ class Portfolio extends Component {
 
     this.state = {
       portfolio: projects,
+      active: false,
     }
   }
 
@@ -42,7 +43,7 @@ class Portfolio extends Component {
     });
   }
   clickSite = (category) => {
-    const update = this.state.portfolio.map(obj => obj.category === category || obj.category === '' ? {...obj, display: true } : obj);
+    const update = this.state.portfolio.map(obj => obj.category === category || category === '' ? {...obj, display: !obj.display } : obj);
     this.setState({
       portfolio: update,
     });
@@ -56,16 +57,15 @@ class Portfolio extends Component {
             <h2 className="text-uppercase">Projects</h2>
           </div>
           <div className="d-flex justify-content-center mb-3">
-            <button className="btn active" onClick={() => this.clickSite('')}> Show all</button>
-            <button className="btn" onClick={() => this.clickSite('web application')} > Web Application</button>
-            <button className="btn" onClick={() => this.clickSite('web site')}> Web Site</button>
-            <button className="btn" onClick={() => this.clickSite('web page')}> Web Page</button>
+            <button className="btn active" onClick={(e) => {e.preventDefault(); this.clickSite('')}}> Show all</button>
+            <button className="btn" onClick={(e) => {e.preventDefault(); this.clickSite('web application')}} > Web Application</button>
+            <button className="btn" onClick={(e) => {e.preventDefault(); this.clickSite('web site')}}> Web Site</button>
+            <button className="btn" onClick={(e) => {e.preventDefault(); this.clickSite('web page')}}> Web Page</button>
           </div>
         <div className="row">
             {this.state.portfolio.filter(item => item.display).map((item, i)=>{
                 return <PortofolioItem {...item} key={i} function={this.handleEvent} functionView={this.countViewers} />
             })
-
           }
         </div>
         </div>
