@@ -462,6 +462,13 @@ ul {
   text-align: center;
   padding-top: 40px;
 }
+.span-text {
+  font-size: 10px;
+  font-weight: 700;
+  font-style: italic;
+  opacity: 0.6;
+  letter-spacing: 0.3px;
+}
 
 .progress {
   display: flex;
