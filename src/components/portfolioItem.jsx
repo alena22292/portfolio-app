@@ -14,7 +14,7 @@ class PortofolioItem extends Component {
     }
     return(
       <div className="col-md-6 col-lg-4">
-        <div className="portfolio-wrapper" onClick={() => this.props.functionView(this.props.title)}>
+        <div className="portfolio-wrapper">
           <div className="nav-wrapper">
             <div className="dots-wrapper">
               <div id="dot-1" className="nav-dots"></div>
@@ -35,7 +35,7 @@ class PortofolioItem extends Component {
             </div>
           </div>
 
-          <div className="portfolio-card">
+          <div className="portfolio-card" onClick={() => this.props.functionView(this.props.title)}>
             <a className="portfolio-link" target="_blank" rel="noreferrer" href={this.props.link}>
               <div style={cssStyle}></div>
             </a>
