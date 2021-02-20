@@ -107,6 +107,15 @@ ul {
   display: none;
 }
 
+.active-category {
+  background-color: purple;
+  color: #f8f1f1;
+}
+.active-category:hover {
+  color: #f8f1f1;
+  font-weight: bold;
+}
+
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {

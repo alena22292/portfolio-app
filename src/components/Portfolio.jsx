@@ -57,7 +57,7 @@ class Portfolio extends Component {
             <h2 className="text-uppercase">Projects</h2>
           </div>
           <div className="d-flex justify-content-center mb-3">
-            <button className="btn active" onClick={(e) => {e.preventDefault(); this.clickSite('')}}> Show all</button>
+            <button className="btn active-category" onClick={(e) => {e.preventDefault(); this.clickSite('')}}> Show all</button>
             <button className="btn" onClick={(e) => {e.preventDefault(); this.clickSite('web application')}} > Web Application</button>
             <button className="btn" onClick={(e) => {e.preventDefault(); this.clickSite('web site')}}> Web Site</button>
             <button className="btn" onClick={(e) => {e.preventDefault(); this.clickSite('web page')}}> Web Page</button>
