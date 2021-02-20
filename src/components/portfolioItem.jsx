@@ -14,7 +14,7 @@ class PortofolioItem extends Component {
     }
     return(
       <div className="col-md-6 col-lg-4">
-        <div className="portfolio-wrapper">
+        <div className="portfolio-wrapper" onClick={() => this.props.functionView(this.props.title)}>
           <div className="nav-wrapper">
             <div className="dots-wrapper">
               <div id="dot-1" className="nav-dots"></div>
@@ -41,6 +41,7 @@ class PortofolioItem extends Component {
             </a>
             <div className="portfolio-caption">
               <h4>{this.props.title}</h4>
+              <span>Viewed: {this.props.value}</span>
               <p className="text-muted">{this.props.subtitle}</p>
             </div>
           </div>
