@@ -7,12 +7,14 @@ import pic_3 from '../images/Portofolio/project_3_2.png';
 import pic_4 from '../images/Portofolio/project_4.jpg';
 import pic_5 from '../images/Portofolio/project_5.jpg';
 import pic_6 from '../images/Portofolio/project_6.jpg';
+import pic_7 from '../images/Portofolio/project_7.jpg';
 
 const projects = [
       { title: 'Redu.co', subtitle: 'The App will help you to reduce CO2 emissions on daily base', image: pic_1, link: 'http://www.redu.co', local: '#', like: false, value: 0 },
-      { title: 'Dress-to-Impress', subtitle: 'How often do you wonder what to dress to the comming party...', image: pic_2, link: 'https://dress-to-impress-alena.herokuapp.com/', local: '#', like: false, value: 0 },
+      { title: 'Dress-to-Impress', subtitle: 'How often do you wonder what to dress to the comming party...', image: pic_2, link: 'https://dress-to-impress-alena.herokuapp.com/', local: '#', like: true, value: 0 },
       { title: 'Task Tracker', subtitle: 'This app helps you to maintain a time management of daily life', image: pic_3, link: '/tasks', local: '#', like: false, value: 0 },
-      { title: 'Calculator', subtitle: 'Easy to use the app when you need to sum up some stuff', image: pic_4, link: '/calculator', local: '#', like: false, value: 0 },
+      { title: 'Calculator', subtitle: 'Easy to use the app when you need to sum up some stuff', image: pic_4, link: '/calculator', local: '#', like: true, value: 0 },
+      { title: 'Mr. Cocktail', subtitle: 'Create your uniq cocktail list', image: pic_7, link: '#', local: '#', like: true, value: 0 },
       { title: 'Chat Messanger', subtitle: 'Keep in touch with your love ones', image: pic_5, link: '/chat', local: '#', like: false, value: 0 },
       { title: 'Shopping bag', subtitle: 'Keep in touch with your love ones', image: pic_6, link: '/chat', local: '#', like: false, value: 0 },
     ];
