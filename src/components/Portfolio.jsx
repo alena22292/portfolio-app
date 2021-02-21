@@ -18,7 +18,10 @@ const projects = [
       { title: 'Chat Messanger', subtitle: 'Keep in touch with your love ones', image: pic_5, link: '/chat', local: '#', like: false, value: 8, category: 'web page', display: false },
       { title: 'Shopping bag', subtitle: 'Keep in touch with your love ones', image: pic_6, link: '/chat', local: '#', like: false, value: 1, category: 'web application', display: false },
     ];
-// display: false => click on the btn with a category, function get the category as parameter => display: true => filtering array by display;
+//  click btn => render the filtering array by category:
+// handlerEvent will structured as case condition
+// for ex. category === 'web site' => arrange a filter by obj.category === 'web site'
+// Why do we need to do that, because we need to avoid changing the boelen of display => it leads to double click to change the value of display!
 
 class Portfolio extends Component {
   constructor(props) {
