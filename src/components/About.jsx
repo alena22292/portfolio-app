@@ -7,9 +7,10 @@ class About extends Component {
     {name: "Python", level: "70%"},
     {name: "Django", level: "30%"},
     {name: "JavaScript", level: "85%"},
+    {name: "React", level: "80%"},
     {name: "HTML/CSS", level: "95%"},
     {name: "Ruby on Rails", level: "90%"},
-    {name: "Heroku", level: "70%"}
+    {name: "Heroku", level: "70%"},
     ]
     return (
       <section className="about" id="about">
