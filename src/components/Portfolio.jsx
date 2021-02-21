@@ -29,7 +29,6 @@ class Portfolio extends Component {
 
     this.state = {
       portfolio: projects,
-      active: false,
     }
   }
 
@@ -46,12 +45,28 @@ class Portfolio extends Component {
     });
   }
   clickSite = (category) => {
-    const update = this.state.portfolio.map(obj => obj.category === category || category === '' ? {...obj, display: !obj.display } : obj);
-    this.setState({
-      portfolio: update,
-    });
+    switch (category) {
+      case 'web application':
+        this.setState({
+          portfolio: projects.filter(obj => obj.category === 'web application'),
+        });
+        break;
+      case 'web site':
+        this.setState({
+          portfolio: projects.filter(obj => obj.category === 'web site'),
+        });
+      break;
+      case 'web page':
+        this.setState({
+          portfolio: projects.filter(obj => obj.category === 'web page'),
+        });
+      break;
+      default:
+        this.setState({
+            portfolio: projects,
+        });
+    }
   }
-
   render() {
     return (
       <section className="mt-3" id="portfolio">
@@ -66,7 +81,7 @@ class Portfolio extends Component {
             <button className="btn" onClick={(e) => {e.preventDefault(); this.clickSite('web page')}}> Web Page</button>
           </div>
         <div className="row">
-            {this.state.portfolio.filter(item => item.display).map((item, i)=>{
+            {this.state.portfolio.map((item, i)=>{
                 return <PortofolioItem {...item} key={i} function={this.handleEvent} functionView={this.countViewers} />
             })
           }
