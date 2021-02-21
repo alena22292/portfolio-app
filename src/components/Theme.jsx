@@ -50,8 +50,8 @@ function Theme(props) {
 
               </div>
 
-              <div className="flex-box">
-              <div className="left-wrapper">
+              <div className="row">
+              <div className="col-sm-12 col-md-4 left-wrapper">
                 <img className="img-fluid my-picture" src={my_pic} alt="" />
                 <h5 style={{ textAlign: 'center' }}>Personalize Theme</h5>
                 <div className="theme-options">
@@ -62,7 +62,7 @@ function Theme(props) {
                 </div>
                 <p className="light-text">*Theme settings will be saved for<br />your next visit</p>
               </div>
-              <div className="right-wrapper">
+              <div className="col-sm-12 col-md-8 right-wrapper">
                 <div id="preview-shadow">
                   <div id="preview">
                     <div id="corner-tl" className="corner"></div>
