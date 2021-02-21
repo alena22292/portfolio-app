@@ -35,8 +35,8 @@ class About extends Component {
                <p>It is just for practice purporse</p>
              </div>
              <ul>
-                <li><i id="social-icon" className="fab fa-github"></i></li>
-                <li><i id="social-icon" className="fab fa-linkedin-in"></i></li>
+                <li><a href="https://github.com/alena22292" target="_blank"><i id="social-icon" className="fab fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/alena-gritsiuk-62667317b/" target="_blank"><i id="social-icon" className="fab fa-linkedin-in"></i></a></li>
                 <li><i id="social-icon" className="fab fa-instagram"></i></li>
               </ul>
             </div>
