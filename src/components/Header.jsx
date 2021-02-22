@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 class Header extends Component {
   render () {
@@ -10,7 +10,6 @@ class Header extends Component {
       backgroundSize: "cover",
       position: "relative",
       zIndex: -1,
-      height: "400px"
     }
     return (
       <header className="page-top" style={cssStyle}>
@@ -18,9 +17,9 @@ class Header extends Component {
         <div className="hero-text">
             <h1 style={{ color: '#f7f6e7' }} className="">{this.props.title}</h1>
             <h3 style={{ color: '#f7f6e7' }} className="text-uppercase">{this.props.subtitle}</h3>
-            {this.props.showButton &&
-                <Link className="btn btn-primary btn-xl text-uppercase " to={this.props.link}>{this.props.buttonText}</Link>
-            }
+            <div className="section-btn" id="section06" class="demo">
+              <a href="#section07"><span></span></a>
+            </div>
         </div>
 
       </header>
