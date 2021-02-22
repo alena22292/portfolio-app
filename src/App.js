@@ -31,7 +31,7 @@ function App() {
         <Wrapper image={logo}>
          <Switch>
             <Route path="/" exact={true}>
-              <Home />
+              <Home resume={resume}/>
             </Route>
             <Route path="/contact">
               <Contact image={contact}/>

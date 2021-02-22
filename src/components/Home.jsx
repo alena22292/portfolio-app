@@ -10,7 +10,7 @@ class Home extends Component {
     return (
       <div>
         <Header image={header} title={"Hello, nice to meet you!"} subtitle={"this is portfolio for a web developer..."} />
-        <Theme />
+        <Theme resume={this.props.resume}/>
       </div>
     );
   }
