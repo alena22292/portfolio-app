@@ -23,6 +23,7 @@ import Portfolio from './components/Portfolio';
 import Tasks from './components/Projects/TaskTracker/Tasks';
 import Calculator from './components/Projects/Calculator/calculator';
 import Chat from './components/Projects/Messanger/Chat';
+import Shop from './components/Projects/Shop/shop';
 
 function App() {
   return (
@@ -44,6 +45,9 @@ function App() {
             </Route>
             <Route path="/calculator">
               <Calculator />
+            </Route>
+            <Route path="/shop">
+              <Shop />
             </Route>
             <Route path="/chat">
               <Chat

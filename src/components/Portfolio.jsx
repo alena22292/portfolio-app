@@ -16,7 +16,7 @@ const projects = [
       { title: 'Calculator', subtitle: 'Easy to use the app when you need to sum up some stuff', image: pic_4, link: '/calculator', local: '#', like: true, value: 56, category: 'web application', display: false },
       { title: 'Mr. Cocktail', subtitle: 'Create your uniq cocktail list', image: pic_7, link: 'https://rails-mister-cocktail-504.herokuapp.com/', local: '#', like: true, value: 13, category: 'web site', display: false },
       { title: 'Chat Messanger', subtitle: 'Keep in touch with your love ones', image: pic_5, link: '/chat', local: '#', like: false, value: 8, category: 'web page', display: false },
-      { title: 'Shopping bag', subtitle: 'Keep in touch with your love ones', image: pic_6, link: '/chat', local: '#', like: false, value: 1, category: 'web application', display: false },
+      { title: 'Shopping bag', subtitle: 'Shopping with fun!', image: pic_6, link: '/shop', local: '#', like: false, value: 67, category: 'web application', display: false },
     ];
 //  click btn => render the filtering array by category:
 // handlerEvent will structured as case condition
