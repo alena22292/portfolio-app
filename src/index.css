@@ -819,6 +819,12 @@ input.result {
   }
 }
 
+
+/*Shoping-cart:*/
+.shopping-card {
+  background: #fff;
+  border-radius: 10px;
+}
 /*Icons:*/
 
 .icons i {
