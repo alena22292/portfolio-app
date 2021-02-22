@@ -24,7 +24,6 @@ class Wrapper extends Component {
           <div className="row-direction">
             <Link to="/portfolio">Portfolio</Link>
             <Link to="/contact">Contact</Link>
-            <Link to="/about">About</Link>
             <Link to="#" className="icon" onClick={(e) => {
               e.preventDefault();
               this.myFunction();

@@ -18,7 +18,6 @@ import resume from './Alena_Gritsiuk_Resume.pdf';
 // components:
 import Home from './components/Home';
 import Wrapper from './components/Wrapper';
-import Theme from './components/Theme';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
 import Tasks from './components/Projects/TaskTracker/Tasks';
@@ -33,9 +32,6 @@ function App() {
          <Switch>
             <Route path="/" exact={true}>
               <Home />
-            </Route>
-            <Route path="/about">
-              <Theme resume={resume}/>
             </Route>
             <Route path="/contact">
               <Contact image={contact}/>
