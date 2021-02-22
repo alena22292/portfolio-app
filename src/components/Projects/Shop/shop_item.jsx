@@ -8,15 +8,33 @@ class ShopItem extends Component {
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
       position: "relative",
-      height: "200px"
+      height: "200px",
+      width: "250px",
     }
     return (
-      <div className="col-sm-12 col-md-6 col-lg-4">
+      <div className="col-sm-12">
         <div className="shopping-card">
-        <a className="portfolio-link" target="_blank" rel="noreferrer" href={this.props.link}>
           <div style={cssStyle}></div>
-        </a>
-        <h3>{this.props.name}</h3>
+          <div className="shopping-caption">
+            <div className="flex-box-between">
+              <div className="flex-box">
+                <h3 className="mr-3">{this.props.name}</h3>
+                <span>{this.props.rating}</span><i style={{color: 'gold', fontSize: '16px', marginLeft: '4px',
+    marginTop: '-3px'}} className="fas fa-baby-carriage"></i>
+              </div>
+              <span>EUR {this.props.price}</span>
+            </div>
+            <p>{this.props.description}</p>
+            <a href="#">Read more</a>
+            <div className="cart-position">
+              <div className="quantity">
+                <i className="fas fa-minus-circle"></i>
+                <span>{this.props.quantity}</span>
+                <i className="fas fa-plus-circle"></i>
+              </div>
+              <i className="fas fa-cart-arrow-down"></i>
+            </div>
+          </div>
         </div>
       </div>
     );

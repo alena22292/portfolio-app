@@ -822,9 +822,45 @@ input.result {
 
 /*Shoping-cart:*/
 .shopping-card {
+  display: flex;
+  position: relative;
   background: #fff;
   border-radius: 10px;
+  padding: 20px 6px;
+  margin-bottom: 20px;
 }
+.shopping-caption {
+  margin-left: 30px;
+  margin-right: 25px;
+}
+.flex-box-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart-position {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  right: 45px;
+}
+.cart-position i {
+  font-size: 25px;
+  color: green;
+  margin-top: -7px;
+}
+.quantity {
+  margin-right: 30px;
+}
+.quantity i {
+  margin: 0 9px;
+  font-size: 20px;
+  color: green;
+  opacity: 0.4;
+
+}
+
 /*Icons:*/
 
 .icons i {
