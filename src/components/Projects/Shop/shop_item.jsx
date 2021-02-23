@@ -29,7 +29,7 @@ class ShopItem extends Component {
             <div className="cart-position">
               <div className="quantity">
                 <i className="fas fa-minus-circle"></i>
-                <span>{this.props.quantity}</span>
+                <span>Add the div to the order page: {this.props.quantity}</span>
                 <i className="fas fa-plus-circle"></i>
               </div>
               <i onClick={e => this.props.function(this.props.id)} className="fas fa-cart-arrow-down"></i>

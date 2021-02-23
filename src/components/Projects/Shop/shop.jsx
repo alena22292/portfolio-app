@@ -19,14 +19,21 @@ class Shop extends Component {
     })
   }
 
+  addQ = (id) => {
+    const product = this.state.order.map(item => item.id === id ? {...item, quantity: item.quantity + 1} : item);
+    this.setState({
+      order: product,
+    })
+  }
+
   render() {
     return (
       <section className="container">
         <div style={{margin: '30px'}}className="flex-box-between">
           <h1 style={{opacity: 0.6, margin: '30px'}}>Online baby shop</h1>
-          <div>
-            <i className="fas fa-cart-arrow-down"></i>
-            <span>{this.state.order.length}</span>
+          <div className="shop-cart-order">
+            <i style={{fontSize: '40px', color: '#ef8d32'}} className="fas fa-cart-arrow-down"></i>
+            <span className="shop-circle-order">{this.state.order.length}</span>
           </div>
         </div>
         <div className="row">
@@ -35,7 +42,6 @@ class Shop extends Component {
          })
         }
         </div>
-
       </section>
     );
   }
