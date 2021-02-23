@@ -829,6 +829,12 @@ input.result {
   padding: 20px 6px;
   margin-bottom: 20px;
 }
+.shopping-order{
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px 0;
+}
+
 .shopping-caption {
   margin-left: 30px;
   margin-right: 25px;
@@ -846,6 +852,7 @@ input.result {
   bottom: 20px;
   right: 45px;
 }
+
 .cart-position i {
   font-size: 25px;
   color: green;

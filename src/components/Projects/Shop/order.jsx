@@ -15,7 +15,7 @@ class Order extends Component {
         </div>
         <div className="row">
         {this.props.order.map(item => {
-          return <OrderItem key={item.id} {...item} functionPlus={this.props.addInCart}/>
+          return <OrderItem key={item.id} {...item} functionPlus={this.props.addQ} functionMinus={this.props.desQ}/>
          })
         }
         </div>

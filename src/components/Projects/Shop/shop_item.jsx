@@ -9,7 +9,7 @@ class ShopItem extends Component {
       backgroundSize: "cover",
       position: "relative",
       height: "200px",
-      width: "250px",
+      width: "330px",
     }
     return (
       <div className="col-sm-12">

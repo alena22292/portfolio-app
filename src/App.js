@@ -52,6 +52,12 @@ class App extends Component {
       order: product,
     })
   }
+  desQ = (id) => {
+    const product = this.state.order.map(item => item.id === id ? {...item, quantity: item.quantity - 1} : item);
+    this.setState({
+      order: product,
+    })
+  }
   render() {
   return (
     <div className="app">
@@ -77,7 +83,7 @@ class App extends Component {
               <Shop items={this.state.items} order={this.state.order} addInCart={this.addInCart} />
             </Route>
             <Route path="/order">
-              <Order order={this.state.order} addQ={this.addQ} />
+              <Order order={this.state.order} addQ={this.addQ} desQ={this.desQ} />
             </Route>
             <Route path="/chat">
               <Chat
