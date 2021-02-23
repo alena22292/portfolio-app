@@ -32,7 +32,7 @@ class ShopItem extends Component {
                 <span>{this.props.quantity}</span>
                 <i className="fas fa-plus-circle"></i>
               </div>
-              <i className="fas fa-cart-arrow-down"></i>
+              <i onClick={e => this.props.function(this.props.id)} className="fas fa-cart-arrow-down"></i>
             </div>
           </div>
         </div>
