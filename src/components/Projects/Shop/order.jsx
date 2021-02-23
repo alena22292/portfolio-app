@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import ShopItem from './shop_item';
+import OrderItem from './order-item';
 
-class Shop extends Component {
+class Order extends Component {
   render() {
     return (
       <section className="container">
         <div style={{margin: '30px'}}className="flex-box-between">
-          <h1 style={{opacity: 0.6, margin: '30px'}}>Online baby shop</h1>
+          <h1 style={{opacity: 0.6, margin: '30px'}}>Your Order</h1>
           <div className="shop-cart-order">
-            <Link to="/order"><i style={{fontSize: '40px', color: '#ef8d32'}} className="fas fa-cart-arrow-down"></i></Link>
+            <Link to="/shop"><i style={{fontSize: '40px', color: '#ef8d32'}} className="fas fa-laptop-house"></i></Link>
             <span className="shop-circle-order">{this.props.order.length}</span>
           </div>
         </div>
         <div className="row">
-        {this.props.items.map(item => {
-          return <ShopItem key={item.id} {...item} function={this.props.addInCart}/>
+        {this.props.order.map(item => {
+          return <OrderItem key={item.id} {...item} functionPlus={this.props.addInCart}/>
          })
         }
         </div>
@@ -24,4 +24,4 @@ class Shop extends Component {
   }
 }
 
-export default Shop;
+export default Order;

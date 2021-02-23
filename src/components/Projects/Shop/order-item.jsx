@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class ShopItem extends Component {
+class OrderItem extends Component {
   render() {
     const cssStyle = {
       backgroundImage: 'url("' + this.props.image + '")',
@@ -24,10 +24,13 @@ class ShopItem extends Component {
               </div>
               <span>EUR {this.props.price}</span>
             </div>
-            <p>{this.props.description}</p>
             <a href="#">Read more</a>
             <div className="cart-position">
-              <i onClick={e => this.props.function(this.props.id)} className="fas fa-cart-arrow-down"></i>
+              <div className="quantity">
+                <i className="fas fa-minus-circle"></i>
+                <span>{this.props.quantity}</span>
+                <i onClick={e => this.props.functionPlus(this.props.id)} className="fas fa-plus-circle"></i>
+              </div>
             </div>
           </div>
         </div>
@@ -36,4 +39,4 @@ class ShopItem extends Component {
   }
 }
 
-export default ShopItem;
+export default OrderItem;
