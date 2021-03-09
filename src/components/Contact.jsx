@@ -46,6 +46,12 @@ class Contact extends Component {
                           return <Field
                             {...field}
                             key={indexField}
+                            value = {this.props.values[field.name]}
+                            name={field.name}
+                            onChange = {this.props.handleChange}
+                            onBlur = {this.props.handleBlur}
+                            touched = {this.props.touched[field.name]}
+                            errors = {this.props.errors[field.name]}
                           />;
                         })}
                       </div>
@@ -66,7 +72,7 @@ class Contact extends Component {
 
 export default withFormik({
   mapPropsToValues: () => ({
-    map: '',
+    name: '',
     email: '',
     phone: '',
     message: '',
