@@ -46,7 +46,7 @@ class Contact extends Component {
             <h2 className="text-uppercase">Contact Me</h2>
             <h3 className="text-muted">Lorem ipsum dolor sit amet consectetur</h3>
           </div>
-            <form id="contactForm" name="sentMessage" noValidate="novalidate" onSubmit={e => this.submitForm(e)}>
+            <form id="contactForm" name="sentMessage" onSubmit={e => this.submitForm(e)}>
                 <div className="row">
                   {fields.sections.map((section, i) => {
                     console.log("Section", i, "with", section);
