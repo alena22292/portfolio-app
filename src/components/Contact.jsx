@@ -76,7 +76,7 @@ export default withFormik({
   }),
   validationSchema: yup.object().shape({
     name: yup.string().required('Name is required!'),
-    email:yup.string().email().required('Email is required!'),
+    email:yup.string().email('Please provide us with a valid email').required('Email is required!'),
     phone: yup.string().required('Phone is required!'),
     message: yup.string().min(10, 'you message is too short...'),
   }),
