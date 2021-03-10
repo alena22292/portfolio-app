@@ -16,10 +16,6 @@ const fields = {
 };
 
 class Contact extends Component {
-  submitForm = (e) => {
-    alert("Form submited!");
-  }
-
   render() {
     const cssStyle = {
       backgroundImage: 'linear-gradient(rgba(155,200,205,.1), rgba(255,255,255,.2)), url("' + this.props.image + '")',
@@ -36,7 +32,7 @@ class Contact extends Component {
             <h2 className="text-uppercase">Contact Me</h2>
             <h3 className="text-muted">Lorem ipsum dolor sit amet consectetur</h3>
           </div>
-            <form id="contactForm" name="sentMessage" onSubmit={e => this.submitForm(e)}>
+            <form id="contactForm" name="sentMessage" onSubmit={this.props.handleSubmit}>
                 <div className="row">
                   {fields.sections.map((section, i) => {
                     console.log("Section", i, "with", section);
@@ -77,18 +73,10 @@ export default withFormik({
     phone: '',
     message: '',
   }),
-  validate: values => {
-    const errors = {};
-    Object.keys(values).map(v => {
-      if (!values[v]) {
-        errors[v] = 'Required';
-      }
-    })
 
-    return errors;
-  },
   handleSubmit: (value, {setSubmitting}) => {
-    alert('You have submitted the form');
+    console.log('Values:', value);
+    alert('You have submitted the form', JSON.stringify(value));
   },
 })(Contact);
 

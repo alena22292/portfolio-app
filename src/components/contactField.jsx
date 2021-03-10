@@ -28,9 +28,9 @@ class Field extends Component {
             onBlur={this.props.onBlur}
             />
         }
-        <p className="help-block text-danger">
+        <p>
           {(this.props.touched && this.props.errors) &&
-            <span>This field is required!</span>
+            <span className="text-danger" style={{fontSize: '12px'}}>This field is required!</span>
           }
         </p>
       </div>
